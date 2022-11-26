@@ -154,15 +154,15 @@ ALTER TABLE ONLY public.rentals ALTER COLUMN rental_id SET DEFAULT nextval('publ
 --
 
 COPY public.bikes (bike_id, type, size, available) FROM stdin;
+7	BMX	19	f
+8	BMX	20	f
+9	BMX	21	f
 1	Mountain	27	t
 2	Mountain	28	t
 3	Mountain	29	t
 4	Road	27	t
 5	Road	28	t
 6	Road	29	t
-7	BMX	19	t
-8	BMX	20	t
-9	BMX	21	t
 \.
 
 
