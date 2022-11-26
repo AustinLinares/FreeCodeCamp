@@ -154,6 +154,15 @@ ALTER TABLE ONLY public.rentals ALTER COLUMN rental_id SET DEFAULT nextval('publ
 --
 
 COPY public.bikes (bike_id, type, size, available) FROM stdin;
+1	Mountain	27	t
+2	Mountain	28	t
+3	Mountain	29	t
+4	Road	27	t
+5	Road	28	t
+6	Road	29	t
+7	BMX	19	t
+8	BMX	20	t
+9	BMX	21	t
 \.
 
 
@@ -177,7 +186,7 @@ COPY public.rentals (rental_id, customer_id, bike_id, date_rented, date_returned
 -- Name: bikes_bike_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.bikes_bike_id_seq', 1, false);
+SELECT pg_catalog.setval('public.bikes_bike_id_seq', 9, true);
 
 
 --
